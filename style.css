@@ -1,0 +1,73 @@
+body,
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+		Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+nav {
+	padding: 1em;
+	z-index: 1;
+  height: 75px;
+  width: 100%;
+	position: fixed;
+	border-bottom: 1px solid #eee;
+  box-shadow: 1px 2px 18px 0px #d2d2d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Everything that is commented out was required to create the same layout with the position and float properties. We have decided to use flex instead which reduces the amount of code we ahve to write and maintain */
+
+/* .company {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(10%, -50%);
+} */
+
+.nav-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	/* float: right;
+	position: absolute;
+	top: 50%;
+	right: 0;
+  transform: translate(-10%, -50%); */
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+/* Everything that is commented out was required to create the same layout with the position and float properties. We have decided to use flex instead which reduces the amount of code we ahve to write and maintain */
+
+/* li {
+	display: inline;
+} */
+
+li:nth-child(2) {
+	margin: 0 0.5em;
+}
+
+.form-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* this is for the form in middle of page */
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+
